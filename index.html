@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz  <span class="bb">App</span></h1>
+    <div class="category-selector">
+      <label for="category">Select Category  : </label>
+      <select id="category">
+        <option value="science">Science</option>
+        <option value="math">Math</option>
+        <option value="history">History</option>
+      </select>
+    </div>
+    
+    <div id="quiz">
+      <div id="question-container"></div>
+      <ul id="answer-buttons" class="btn-grid"></ul>
+      <div class="progress-bar" id="progress-bar"></div>
+      <div class="controls">
+        <button id="next-btn" class="btn">Next</button>
+      </div>
+    </div>
+
+    <div id="result-container">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="restart-btn" class="btn">Restart Quiz</button>
+      <h2>High Score   : <span id="high-score">0</span></h2>
+    </div>
+
+    <div class="timer">
+      <span class="time">Time Left    : <span id="timer">30</span> seconds</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
